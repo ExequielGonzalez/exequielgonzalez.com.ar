@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header>
-      <q-toolbar class="navbar grid">
+    <q-header class="header" reveal :reveal-offset="250">
+      <q-toolbar inset class="navbar grid">
         <h1 class="navbar__title">Exequiel Gonzalez</h1>
 
         <q-tabs
@@ -38,18 +38,29 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
-.navbar {
-  margin-top: 20px;
+<style lang="scss" >
+.header {
   @media (max-width: $m) {
-    margin-top: 0px;
+    // grid-column: 0/0;
+    // display: none;
+    // font-size: 1rem;
+    opacity: 0;
+  }
+}
+.navbar {
+  // position: absolute;
+  height: 68px;
+  padding-top: 20px;
+  @media (max-width: $m) {
+    padding-top: 0px;
   }
   &__title {
+    color: $accent;
     grid-column: 1/5;
-    font-size: 1.7rem;
+    font-size: 2rem;
+    letter-spacing: 1px;
     font-weight: 500;
-    font-weight: 300;
-    font-style: bold;
+
     line-height: 1.71rem;
     // font-family: "Roboto";
 
@@ -62,7 +73,7 @@ export default {
   &__tab {
     grid-column: 5/12;
     @media (max-width: $m) {
-      margin-top: 0px;
+      padding-top: 0px;
       // display: inline-block;
       grid-column: 1/5;
       // display: none;
