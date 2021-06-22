@@ -1,5 +1,6 @@
 <template>
   <section class="introduction grid absolute-top">
+    <!-- <Background /> -->
     <p class="introduction__brief">
       Hola, yo soy
       <span class="introduction__brief-name">Exequiel Gonzalez</span>
@@ -25,10 +26,12 @@
 </template>
 
 <script>
+import Background from "components/Background.vue";
 import typical from "vue-typical";
 export default {
   components: {
     typical
+    // Background
   }
 };
 </script>

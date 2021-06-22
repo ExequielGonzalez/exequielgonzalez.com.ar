@@ -9,16 +9,21 @@
 
       <!-- <q-btn class="test" color="primary" icon="check" label="OK" /> -->
       <!-- <q-btn class="test2" color="primary" icon="check" label="OK" /> -->
+      <ContactForm />
+      <Contact />
     </div>
   </q-page>
 </template>
 
 <script>
 import Introduction from "components/Introduction.vue";
+import ContactForm from "components/ContactForm.vue";
+import Contact from "components/Contact.vue";
 import Background from "components/Background.vue";
 export default {
   name: "PageHome",
-  components: { Introduction, Background }
+  components: { Introduction, Background, Contact, ContactForm }
+  // components: { Introduction, Contact, ContactForm }
 };
 </script>
 
@@ -34,16 +39,11 @@ export default {
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(3rem);
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  // overflow-y: scroll;
   &__introduction {
     height: calc(100vh - 68px);
     // height: 100vh;
     scroll-snap-align: start;
-  }
-  & > div {
-    height: 100vh;
-    background-color: red;
-    content: "asd";
   }
 }
 </style>
