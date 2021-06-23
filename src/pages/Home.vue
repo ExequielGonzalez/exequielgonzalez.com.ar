@@ -17,13 +17,13 @@
 
 <script>
 import Introduction from "components/Introduction.vue";
-import ContactForm from "components/ContactForm.vue";
+// import ContactForm from "components/ContactForm.vue";
 import Contact from "components/Contact.vue";
 import Background from "components/Background.vue";
 export default {
   name: "PageHome",
-  components: { Introduction, Background, Contact, ContactForm }
-  // components: { Introduction, Contact, ContactForm }
+  // components: { Introduction, Background, Contact, ContactForm }
+  components: { Introduction, Background, Contact }
 };
 </script>
 
