@@ -9,7 +9,7 @@
 
       <!-- <q-btn class="test" color="primary" icon="check" label="OK" /> -->
       <!-- <q-btn class="test2" color="primary" icon="check" label="OK" /> -->
-      <ContactForm />
+      <!-- <ContactForm /> -->
       <Contact />
     </div>
   </q-page>
